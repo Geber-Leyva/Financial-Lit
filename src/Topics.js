@@ -1,48 +1,38 @@
 import React from 'react'
-import budg from '../public/budget.jpg'
-import sav from '../public/save.jpg'
-import cred from '../public/credit.jpg'
-import pf from '../public/personalfinance.jpeg'
-import deb from '../public/debt.png'
+import budg from './pictures/budget.jpg'
+import sav from './pictures/save.jpg'
+import cred from './pictures/credit.jpg'
+import pf from './pictures/personalfinance.jpeg'
+import deb from './pictures/debt.png'
+import './Topics.css'
 
 
-const budget = {
-    name: "Budget",
-    image :budg,
-}
-const save = {
-    name: "Save",
-    image: sav,
-}
+const topics= [
+  {name: "Budget", image :budg,}, 
+  {name: "Save", image: sav,}, 
+  {name: "Personal Finance", image: pf,}, 
+  {name : "Credit", image: cred,}, 
+  {name : "Debt/Loan", image : deb,}
+]
 
-const personalFinance= {
-    name: "Personal Finance",
-    image: pf,
-}
 
-const credit = {
-    name : "Credit",
-    image: cred,
-}
 
-const debtLoan = {
-    name : "Debt/Loan",
-    image : deb,
-}
-
-export default function topics() {
-
-  return (
+export default function Topics() {
+  const listTopics = topics.map(topic =>
     <div className='container'>
         <div className='topic'>
           <div>
-            <p>{budget.name}</p>
+            <p>{topic.name}</p>
           </div>
           <div>
-            <img src={budget.image}></img>
+          <img src={topic.image !== "N/A" ? topic.image : "https://via.placeholder.com/400"} alt={topics.image} />
           </div>
         </div>
 
       </div>
-  )
+    );
+  return (
+    <ul>{listTopics}</ul>
+    
+  );
 }

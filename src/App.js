@@ -1,9 +1,14 @@
 import './App.css';
 import Navbar from './Navbar';
+import Topics from './Topics';
 
 function App() {
   return (
-    <Navbar />
+    <div>
+      <Navbar />
+      <Topics />
+    </div>
+    
     
     
   );
