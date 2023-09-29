@@ -5,34 +5,27 @@ import cred from './pictures/credit.jpg'
 import pf from './pictures/personalfinance.jpeg'
 import deb from './pictures/debt.png'
 import './Topics.css'
+import TopicCard from './TopicCard'
 
 
 const topics= [
-  {name: "Budget", image :budg,}, 
-  {name: "Save", image: sav,}, 
-  {name: "Personal Finance", image: pf,}, 
-  {name : "Credit", image: cred,}, 
-  {name : "Debt/Loan", image : deb,}
+  {id: 1 , name: "Budget", image :budg,}, 
+  {id: 2 , name: "Save", image: sav,}, 
+  {id: 3 , name: "Personal Finance", image: pf,}, 
+  {id: 4 , name : "Credit", image: cred,}, 
+  {id: 5 , name : "Debt/Loan", image : deb,},
+  {id: 6, name: "Investing", image: null},
 ]
 
-
-
 export default function Topics() {
-  const listTopics = topics.map(topic =>
-    <div className='container'>
-        <div className='topic'>
-          <div>
-            <p>{topic.name}</p>
-          </div>
-          <div>
-          <img src={topic.image !== "N/A" ? topic.image : "https://via.placeholder.com/400"} alt={topics.image} />
-          </div>
-        </div>
 
-      </div>
-    );
-  return (
-    <ul>{listTopics}</ul>
-    
+  return(
+
+    <div className='container'>
+      
+      {topics.map((topic) => (
+        <TopicCard topic = {topic} />
+      ))}
+    </div>
   );
 }

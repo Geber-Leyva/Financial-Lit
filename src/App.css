@@ -6,14 +6,23 @@
 .App-header {
   background-color: MediumSeaGreen;
   min-height: 10vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 100%;
   text-shadow: 2px 2px black;
+  letter-spacing: 20px;
   color: white;
   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.footer {
+  background-color: mediumseagreen;
+  padding: 10px;
+  bottom: 0;
+  height: 2.5rem;
 }
 
 
