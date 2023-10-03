@@ -8,18 +8,12 @@ function App() {
   return (
     <div className='wholeApp'>
       <Navbar />
-
-      <Topics />
-      <div>
-        <header>
-          <h1>Calculator</h1>
-        </header>
-      </div>
+      <main>
+        <Topics />
+        <h1>Calculator</h1>
+      </main>  
       <Footer />
     </div>
-    
-    
-    
   );
 }
 

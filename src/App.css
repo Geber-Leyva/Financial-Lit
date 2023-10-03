@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
   /* flex-direction: column;  */
+  min-height: 100vh;
+}
+main{
+  flex: 1;
 }
 
 .App {
@@ -29,21 +33,7 @@
 
 .footer {
   background-color: mediumseagreen;
-  position:absolute;
-  left:0;
-  bottom:0;
-  right:0;
-  padding-bottom:60px;
-  display: block;
+  padding: 10px;
+  height: 10vh;
 }
 
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
