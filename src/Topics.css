@@ -1,14 +1,16 @@
 .container {
-  width: 900px;
-  height: 100%;
-  padding: 20px;
+  width: 100%;
+  /* height: 50vh; */
+  position: relative;
+  align-items: center;
   
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   
   
   
-  
-  /* background-color: blue; */
+ /* background-color: blue;  */
   
   
 
@@ -16,20 +18,21 @@
 }
 
 .topic {
-  width: 400px;
+  width: 210px;
   height: 160px;
   background-color: mediumseagreen;
-  margin: 1rem;
+  margin: 1.5rem;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
   /* position: relative; */
   box-shadow: 0 0 3px black;
-  /* overflow: hidden;
-  border: none; */
+  overflow: hidden;
+  
   border: 100px;
   border-radius: 5px;
   font-size: 1em;
   padding-top: 5px;
+ 
   
 
   /* transition: all 0.4s cubic-bezier(1, 1, 1, 1);
