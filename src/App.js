@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Nav&Footer/Navbar';
 import Topics from './Topics';
 import Footer from './Nav&Footer/Footer';
+import Calculator from './Calculator';
 //import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
       <Navbar />
       <main>
         <Topics />
-        <h1>Calculator</h1>
+        <div>
+          <Calculator />
+        </div>
+        
       </main>  
       <Footer />
     </div>
