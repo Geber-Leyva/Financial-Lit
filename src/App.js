@@ -11,10 +11,10 @@ function App() {
       <Navbar />
       <main>
         <Topics />
-        <div>
-          <Calculator />
-        </div>
         
+        <Calculator />
+       
+        <h1>About Us</h1>
       </main>  
       <Footer />
     </div>

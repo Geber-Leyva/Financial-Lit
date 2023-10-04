@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: blue; */
+    background-color: mediumseagreen;
     
 }
 
@@ -22,9 +22,9 @@ h2{
 }
 
 .calculator{
-    width: 50vh;
+    width: 58vh;
     height: 60vh;
-    background-color: mediumseagreen;
+    background-color: whitesmoke;
     margin: 1.5rem;
     text-align: center;
     position: relative;
@@ -35,6 +35,10 @@ h2{
     padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+
+    
     
 }
 text{
@@ -42,5 +46,38 @@ text{
     font-family: "Lucida Console", "Courier New", monospace;
     letter-spacing: 2px;
     text-align: center;
+    margin-top: 1.5rem;
 
+}
+label{
+    font-family: "Lucida Console", "Courier New", monospace;
+    letter-spacing: 2px;
+    text-align: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center; 
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.buttonClicked{
+    width: 15vh;
+    height: 5vh;
+    position: relative;
+    box-shadow: 0 0 3px black;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: mediumseagreen;
+    margin: 1.5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    letter-spacing: 2px;
+    text-align: center;
 }
