@@ -2,22 +2,35 @@ import './App.css';
 import Navbar from './Nav&Footer/Navbar';
 import Topics from './Topics';
 import Footer from './Nav&Footer/Footer';
-import Calculator from './Calculator';
-//import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Calculator from './Calculator/Calculator';
+import NextWindow from './TopicsPage'; // Adjust the path as needed
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+
+function MainContent() {
+  return (
+    <div>
+      <Topics />
+      <Calculator />
+      <h1>About us</h1>
+    </div>
+  );
+}
 
 function App() {
   return (
+    <Router>
     <div className='wholeApp'>
       <Navbar />
-      <main>
-        <Topics />
-        
-        <Calculator />
-       
-        <h1>About Us</h1>
-      </main>  
+      <div className='main'>
+      <Routes>
+        <Route path="/" element={<MainContent />} />
+        <Route path="/NextWindow" element={<NextWindow />} />
+      </Routes>
+      </div>
       <Footer />
     </div>
+  </Router>
   );
 }
 

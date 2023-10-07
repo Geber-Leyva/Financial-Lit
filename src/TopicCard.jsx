@@ -1,16 +1,13 @@
-//import { useState } from 'react';
 import React from 'react'
 import './Topics.css'
-//import Topics from './TopicPage'
-//import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 const TopicCard = ({topic:{id, name, image}}) => {
-  //  const [topicSelected, setTopicSelected] = useState(0);
-  //const nagivate = useNavigate();
+  const navigate = useNavigate();
     function handleClick(){ 
-     // nagivate("/TopicPage");
-      alert(id)
+     navigate('/NextWindow');
+ 
     }
     return(
         <button onClick= {handleClick} className='topic' key={id} >
