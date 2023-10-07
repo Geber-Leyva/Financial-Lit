@@ -1,9 +1,9 @@
 import './App.css';
 import Navbar from './Nav&Footer/Navbar';
-import Topics from './Topics';
+import Topics from './Topic/Topics';
 import Footer from './Nav&Footer/Footer';
 import Calculator from './Calculator/Calculator';
-import NextWindow from './TopicsPage'; // Adjust the path as needed
+import NextWindow from './Topic/TopicsPage'; // Adjust the path as needed
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
