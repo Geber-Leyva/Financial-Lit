@@ -4,13 +4,20 @@ import { useLocation } from 'react-router-dom';
 
 function Next_Window() {
   const location = useLocation();
-  const { id, name, image, info } = location.state;
+  const { name, info } = location.state;
+  const infoLines = info.split('\n');
 
   return (
     <div className='wholeApp'>
-      <p>{info}</p>
+      <h1 className='centered'>{name}</h1>
+      <div className='info-container'>
+        {infoLines.map((line, index) => (
+          <p key={index}className='info-paragraph'>{line}</p>
+        ))}
+      </div>
     </div>
   );
 }
 
 export default Next_Window;
+
