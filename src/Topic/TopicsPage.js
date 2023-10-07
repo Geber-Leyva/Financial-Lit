@@ -1,9 +1,14 @@
-import './App.css';
+import React from 'react';
+import './Topics.css';
+import { useLocation } from 'react-router-dom';
 
 function Next_Window() {
+  const location = useLocation();
+  const { id, name, image, info } = location.state;
+
   return (
     <div className='wholeApp'>
-      <h1>hello</h1>
+      <p>{info}</p>
     </div>
   );
 }

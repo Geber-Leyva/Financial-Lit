@@ -1,4 +1,4 @@
-import './App.css';
+import '/Users/geber/Financial-Lit/src/App.css';
 import Navbar from './Nav&Footer/Navbar';
 import Topics from './Topic/Topics';
 import Footer from './Nav&Footer/Footer';
