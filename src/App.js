@@ -12,7 +12,15 @@ function MainContent() {
     <div>
       <Topics />
       <Calculator />
-      <h1>About us</h1>
+      <h2>About us</h2>
+      <div>
+        <p>Clarissa Dominguez</p>
+     
+        
+        <p>Geber Leyva</p>
+        <p>Other</p>
+
+      </div>
     </div>
   );
 }

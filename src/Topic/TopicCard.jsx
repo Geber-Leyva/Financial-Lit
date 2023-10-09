@@ -3,19 +3,19 @@ import './Topics.css'
 import { useNavigate } from "react-router-dom"
 
 
-const TopicCard = ({topic:{id, name, image}}) => {
+const TopicCard = ({topic}) => {
   const navigate = useNavigate();
     function handleClick(){ 
-     navigate('/NextWindow');
+     navigate('/NextWindow' , {state: topic});
  
     }
     return(
-        <button onClick= {handleClick} className='topic' key={id} >
+        <button onClick= {handleClick} className='topic' >
           <div>
-            <img src={image !== "N/A" ? image : "https://via.placeholder.com/400"} alt={image} />
+            <img src={topic.image !== "N/A" ? topic.image : "https://via.placeholder.com/400"} alt={topic.image} />
           </div>
           <div>
-            <span>{name}</span>
+            <span>{topic.name}</span>
           </div>
         </button>
     );
