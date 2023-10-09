@@ -1,14 +1,12 @@
 .wholeCalculator{
     min-height: 50vh;
     width: 100%;
-  /* height: 50vh; */
     position: relative;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: mediumseagreen;
-    
 }
 
 h2{
@@ -18,7 +16,6 @@ h2{
     text-shadow: 2px 2px black;
     color:green;
     font-size: x-large;
-
 }
 
 .calculator{
@@ -37,18 +34,15 @@ h2{
     flex-wrap: wrap;
     justify-content: center; 
     align-items: center; 
-
-    
-    
 }
+
 text{
-    
     font-family: "Lucida Console", "Courier New", monospace;
     letter-spacing: 2px;
     text-align: center;
     margin-top: 1.5rem;
-
 }
+
 label{
     font-family: "Lucida Console", "Courier New", monospace;
     letter-spacing: 2px;
@@ -74,8 +68,8 @@ label{
     background-color: mediumseagreen;
     margin: 1.5rem;
     font-family: "Lucida Console", "Courier New", monospace;
-
 }
+
 p{
     font-family: "Lucida Console", "Courier New", monospace;
     letter-spacing: 2px;

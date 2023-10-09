@@ -1,10 +1,6 @@
 .wholeApp {
-  /* padding: 4rem; */
-
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* flex-direction: column;  */
   min-height: 100vh;
 }
 .main{
@@ -14,7 +10,6 @@
 .App {
   text-align: center;
 }
-
 
 .App-header {
   background-color: MediumSeaGreen;
@@ -32,10 +27,42 @@
   width: 100%;
 }
 
-
 .footer {
   background-color: mediumseagreen;
   padding: 10px;
   height: 10vh;
+}
+
+.about-us-container{
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: column; This line changes the direction to columns */
+  margin: 20px;
+}
+
+.about-us{
+  width: 250px;
+  height: 340px;
+  margin-right: 30px;
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 3px black;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid mediumseagreen;
+  padding: relative;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.about-us-image{
+  height: 190px;
+  width: 190px;
+  margin-bottom: 5px;
 }
 

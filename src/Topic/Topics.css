@@ -45,18 +45,16 @@ img{
 
 .info-container {
   margin: 20px; /* Adjust margin as needed */
-  
-
 }
 
 .info-paragraph {
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: transparent; /* Set the background color to transparent */
-    border: 2px solid mediumseagreen; /* Add a green border around the box */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    padding: 20px; /* Adjust padding as needed to control the space inside the box */
-    margin: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: transparent; /* Set the background color to transparent */
+  border: 2px solid mediumseagreen; /* Add a green border around the box */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  padding: 20px; /* Adjust padding as needed to control the space inside the box */
+  margin: 20px;
   /* Add other styling properties (color, font-family, etc.) as needed */
   box-shadow: 0 0 3px black;
 }
