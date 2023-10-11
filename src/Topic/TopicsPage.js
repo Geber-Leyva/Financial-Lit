@@ -1,11 +1,13 @@
 import React from 'react';
 import './Topics.css';
 import { useLocation } from 'react-router-dom';
+import BudgetSheet from './BudgetSheet';
 
 function TopicsPage() {
   const location = useLocation();
-  const { name, image, info} = location.state;
+  const { id, name, image, info} = location.state;
   const infoLines = info.split('\n');
+
 
   return (
     <div className='wholeApp'>
@@ -17,6 +19,13 @@ function TopicsPage() {
         {infoLines.map((line, index) => (
           <p key={index}className='info-paragraph'>{line}</p>
         ))}
+        {id === 1 ? (
+          <div>
+            <BudgetSheet />
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     </div>
   );
