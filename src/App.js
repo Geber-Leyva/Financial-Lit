@@ -6,6 +6,7 @@ import Calculator from './Calculator/Calculator';
 import NextWindow from './Topic/TopicsPage'; // Adjust the path as needed
 import geber from './pictures/geber.jpeg';
 import clarissa from './pictures/clarissa.jpeg';
+import alexis from './pictures/alexis.jpg';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -26,7 +27,7 @@ function MainContent() {
         </div>
         <div className='about-us'>
           <text><strong>Alexis Gonzalez:</strong></text> <p>This is my 2nd semester at UTEP. I am 19 years old.</p>
-          <img className='about-us-image' src={geber !== "N/A" ? geber : "https://via.placeholder.com/400"} alt={geber} />
+          <img className='about-us-image' src={alexis !== "N/A" ? alexis : "https://via.placeholder.com/400"} alt={alexis} />
         </div>
       </div>
     </div>
